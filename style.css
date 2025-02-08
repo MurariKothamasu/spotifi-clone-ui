@@ -1,0 +1,439 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", serif;
+  color: #fff;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.main{
+  display: flex;
+  height: 100vh;
+  padding-top: 1rem;
+  padding-right: 0.7rem;
+}
+
+.sidebar{
+  background-color: #000;
+  width: 22%;
+  margin-right: 0.25rem;
+  border-radius: 1rem; /*16px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content{
+  background-color: #121212;
+  flex: 1;
+  border-radius: 1rem;
+  overflow: scroll;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.music-player{
+  background-color: #000000;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+}
+
+.nav{
+  background-color: #121212;
+  width: 90%;
+  height: 100px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+.nav ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav ul li{
+  line-height: 2.5rem;
+  opacity: 0.7;
+}
+
+.nav ul li:hover{
+  opacity: 1;
+}
+
+.nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.nav ul li i{
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+
+.library{
+  background-color: #121212;
+  width: 90%;
+  margin-top: 0.8rem;
+  border-radius: 1rem;
+  padding: 0.5rem 0.75rem;
+  height: 90%;
+}
+
+.options{
+  display: flex;
+  justify-content: space-between;
+}
+
+.lib-options{
+  display: flex;
+  justify-content: center;
+}
+
+.lib-options img{
+    filter: invert(1) brightness(2);
+    width: 1.5rem;
+    margin-left: 1rem;
+}
+.lib-options a{
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  opacity: 0.7;
+}
+
+.lib-options a:hover{
+  opacity: 1;
+}
+.icons{
+  display: flex;
+  align-items: center;
+  margin-right: 1.2rem;
+}
+
+.icons i{
+  font-size: 1.25rem;
+  padding-right: 1.4rem;
+  opacity: 0.5;
+}
+
+.icons i:hover{
+  opacity: 1;
+}
+
+.box{
+  background-color: #232323;
+  border-radius: 0.75rem;
+  margin: 1rem 0 0.5rem 0;
+  padding: 1rem 1.25rem 1rem 1.25rem;
+}
+
+.box-p1{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.box-p2{
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.badge{
+  background-color: #fff;
+  height: 30px;
+  border: none;
+  border-radius: 100px ;
+  padding : 0.25rem 1rem 0.25rem 1rem ;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.stickey-nav{
+  position: sticky;
+  top: 0;
+  margin-top: 1rem;
+  margin-right: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212;
+  z-index: 10000;
+  height: 65px;
+}
+
+.left-nav-icons span{
+  display: inline-flex;
+  background-color : #080808;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+}
+
+.lessthan-button , .lessthan-button i{
+  opacity: 0.5;
+}
+
+.left-nav-icons span i{
+  font-size: 1.25rem;
+}
+
+.right-nav-icons button{
+  margin-right: 0.6rem;
+}
+
+.black-badge{
+  font-size: 1rem;
+  background-color: #000;
+  color: white;
+}
+
+.black-badge i{
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.user-icon{
+  font-size: 1rem;
+}
+
+.user-icon-span{
+  background-color: #000;
+  display: inline-flex;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width : 1000px) {
+  .hide{
+    display: none;
+  }
+
+  .left-nav-icons .graterthan-button{
+    display: none;
+  }
+}
+
+.card{
+  width: 200px;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.card:hover{
+  background-color: #232323;
+}
+.card img{
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.card-title{
+  font-weight: 700;
+}
+.card-info{
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.cards-container{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer{
+  height: 300px;
+  margin-top: 5rem;
+}
+.line{
+  width: 100%;
+  border-top: 0.8px solid #fff;
+  opacity: 0.3;
+}
+
+.legal{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.legal a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.left-legal{
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.right-legal{
+  opacity: 0.6;
+  font-size: 0.8rem;
+}
+
+.popular-artist-card {
+  width: 13.5rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.popular-artist-card:hover {
+  background-color: #232323;
+  color: white; /* Adjust text color for visibility */
+}
+
+.artist-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist-image img {
+  width: 200px; /* 100px */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.artist-name {
+  margin-top: 0.7rem;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.profession{
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.popular-artist-card-container{
+  display: flex;
+  overflow-x: auto;
+}
+
+.left-sec{
+  width: 25%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.left-sec img{
+  width: 60px;
+  height: 60px;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 0.75rem;
+}
+
+.song-details p{
+  margin: 0px;
+}
+.song-artist-name{
+  font-size: 0.7rem;
+  margin-top: 0.25rem;
+  opacity: 0.5;
+}
+
+.song-name{
+  font-size: 0.8rem;
+}
+.mid-sec{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.player-controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-controls i:hover{
+  opacity: 1;
+}
+
+.player-controls i{
+  margin-right: 2rem;
+  opacity: 0.6;
+}
+.play-pause-btn{ 
+  font-size: 1.8rem;
+  opacity: 1;
+}
+
+.player-controls{
+  color: white;
+  font-size: 1.25rem;
+}
+.shuffle-btn{
+  color: #1db954;
+  opacity: 0.5;
+}
+
+.song-progress{
+  display: flex;
+}
+
+.song-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem; 
+  width: 80%;
+}
+
+.song-progress input[type="range"] {
+  flex: 1; 
+  appearance: none;
+  height: 0.25rem; 
+  background: #ddd; 
+  border-radius: 0.25rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.song-progress input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 1rem; 
+  height: 1rem;
+  background: green;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.song-progress input[type="range"]::-moz-range-thumb {
+  width: 1rem;
+  height: 1rem;
+  background: green;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.song-progress p{
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+
